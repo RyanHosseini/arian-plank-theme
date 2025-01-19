@@ -73,6 +73,8 @@ $ picom &
 ### Clone the repository
 
 ```Shell
+$ killall -9 plank
+
 git clone https://github.com/ryanhosseini/arian-plank-theme.git
 cd arian-plank-theme/
 sh install.sh 
