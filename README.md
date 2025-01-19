@@ -50,6 +50,7 @@ yay -S plank-theme-arian-git
 ### Void Linux (dependency installation)
 
 ```Shell
+
 # xbps-install -Suvy plank picom
 
 $ mkdir -p $HOME/.local/share/plank/themes
@@ -59,6 +60,8 @@ $ mkdir -p $HOME/.local/share/plank/themes
 Configuring Picom on Void Linux.
 
 ```Shell
+$ killall -9 picom
+
 $ rm -Rf  ~/.config/picom/  or  mv -i ~/.config/picom ~/.config/picom-backup
 
 $ mkdir -p  ~/.config/picom/
@@ -77,9 +80,12 @@ sh install.sh
 
 ### Other Distributions / Manually
 ```Shell
+$ killall -9 plank
+
 git clone https://github.com/ryanhosseini/arian-plank-theme.git
 cd arian-plank-theme/
-sh install.sh 
+sh install.sh
+
 ```
 
 ![Linux Icon](https://img.shields.io/badge/Linux-FCC624?style=for-the-badge&logo=linux&logoColor=black) 
