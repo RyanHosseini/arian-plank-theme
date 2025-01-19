@@ -47,6 +47,12 @@ yay -S plank-theme-arian-git
 ![Linux Icon](https://img.shields.io/badge/manjaro-35BF5C?style=for-the-badge&logo=manjaro&logoColor=white) 
 ![Linux Icon](https://img.shields.io/badge/Artix_Linux-10A0CC?style=for-the-badge&logo=artix-linux&logoColor=white) 
 
+### Void Linux (dependency installation)
+
+```Shell
+# xbps-install -Suvy plank picom
+```
+
 ### Other Distributions / Manually
 ```Shell
 git clone https://github.com/ryanhosseini/arian-plank-theme.git
