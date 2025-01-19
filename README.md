@@ -47,11 +47,47 @@ yay -S plank-theme-arian-git
 ![Linux Icon](https://img.shields.io/badge/manjaro-35BF5C?style=for-the-badge&logo=manjaro&logoColor=white) 
 ![Linux Icon](https://img.shields.io/badge/Artix_Linux-10A0CC?style=for-the-badge&logo=artix-linux&logoColor=white) 
 
-### Other Distributions / Manually
+### Void Linux (dependency installation)
+
 ```Shell
+
+# xbps-install -Suvy plank picom
+
+$ mkdir -p $HOME/.local/share/plank/themes
+
+```
+
+Configuring Picom on Void Linux.
+
+```Shell
+$ killall -9 picom
+
+$ rm -Rf  ~/.config/picom/  or  mv -i ~/.config/picom ~/.config/picom-backup
+
+$ mkdir -p  ~/.config/picom/
+
+$ cp /usr/share/examples/picom/picom.sample.conf ~/.config/picom/picom.conf
+
+$ picom &
+```
+### Clone the repository
+
+```Shell
+$ killall -9 plank
+
 git clone https://github.com/ryanhosseini/arian-plank-theme.git
 cd arian-plank-theme/
 sh install.sh 
+```
+
+### Other Distributions / Manually
+```Shell
+$ killall -9 plank
+
+git clone https://github.com/ryanhosseini/arian-plank-theme.git
+cd arian-plank-theme/
+sh install.sh
+
 ```
 
 ![Linux Icon](https://img.shields.io/badge/Linux-FCC624?style=for-the-badge&logo=linux&logoColor=black) 
@@ -60,6 +96,7 @@ sh install.sh
 ![Linux Icon](https://img.shields.io/badge/Linux_Mint-87CF3E?style=for-the-badge&logo=linux-mint&logoColor=white)
 ![Linux Icon](https://img.shields.io/badge/Ubuntu-E95420?style=for-the-badge&logo=ubuntu&logoColor=white)
 ![Linux Icon](https://img.shields.io/badge/Cent%20OS-262577?style=for-the-badge&logo=CentOS&logoColor=white)
+![ Linux Icon](https://avatars.githubusercontent.com/u/37247796?s=80&v=4)
 
 <br>
 
